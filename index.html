@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TicTacToe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        </head>
+    <body>
+
+        <h1>Tic Tac Toe</h1>
+
+        <div id="choice">
+            <button class="x" onclick="start('X')">X</button>
+            <button class="o" onclick="start('O')">O</button>
+
+        </div>
+
+        <div id="board" style="display:none">
+            <button id="b1" onclick="play(1)" ></button>
+            <button id="b2" onclick="play(2)" ></button>
+            <button id="b3" onclick="play(3)" ></button>
+            <button id="b4" onclick="play(4)" ></button>
+            <button id="b5" onclick="play(5)" ></button>
+            <button id="b6" onclick="play(6)" ></button>
+            <button id="b7" onclick="play(7)" ></button>
+            <button id="b8" onclick="play(8)" ></button>
+            <button id="b9" onclick="play(9)" ></button>
+        </div>
+
+        <div id="result" style="display:none">
+            <h1 id="win" style="display:none">You Win</h1>
+            <h1 id="lose" style="display:none">You Lose</h1>
+            <h1 id="tie" style="display:none">Its a Tie</h1>
+            <button id="restart" onclick="Restart()">Restart</button>
+        </div>
+    </body>
+</html>
